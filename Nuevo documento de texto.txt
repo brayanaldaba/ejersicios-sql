@@ -1,13 +1,13 @@
-11 select todos los empelados de las oficinas de 'usa'
+11 )select todos los empelados de las oficinas de 'usa'
 
 SELECT 
 employees*, offices.country
 FRON 
 employees JOIN offices ON employees.officeCode=office.officeCode
 WHERE 
-office.country= 'usa'
+office.country= "usa";
 
-12 seleccionar el monto total en ventas de los productos de la linea 'motorcycles'
+12 )seleccionar el monto total en ventas de los productos de la linea 'motorcycles'
 
 SELECT 
 SUM (payment.amount) AS total_ventas
@@ -16,4 +16,4 @@ FROM
 payment JOIN customers ON payment.customerNomber= cutomers.custumerNumber JOIN order ON customers.customerNumber=order.customerNumber JOIN orderdetail on orders.orderNumber=orderDetail.orderNumber JOIN products on orderdetail.productcode= products.productCode JOIN productline on products.productLine = productLines.productline
 
 WHERE
-productlines.productline"motorcycles"
+productlines.productline="motorcycles";
