@@ -3,7 +3,7 @@
 SELECT 
 employees*, offices.country
 FRON 
-employees JHOIN offices ON employees.officeCode=office.officeCode
+employees JOIN offices ON employees.officeCode=office.officeCode
 WHERE 
 office.country= 'usa'
 
